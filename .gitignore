@@ -1,0 +1,12 @@
+# Node modules
+node_modules
+
+# Compilado de TypeScript
+dist
+
+# Archivos de entorno
+.env
+
+# Archivos de configuración de IDEs
+.vscode/
+*.code-workspace
