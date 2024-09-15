@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/api/index"
+    },
+    {
+      "src": "/status",
+      "dest": "/api/status"
+    },
+    {
+      "src": "/repair-bay",
+      "dest": "/api/repair-bay"
+    },
+    {
+      "src": "/teapot",
+      "dest": "/api/teapot"
+    }
+  ]
+}
