@@ -14,6 +14,11 @@ const systemCodes: { [key: string]: string } = {
 // Variable global para almacenar el último sistema dañado
 let lastDamagedSystem: string | null = null;
 
+// Ruta raíz que muestra un mensaje o redirige
+app.get('/', (req, res) => {
+    res.send('Bienvenido a la API de Nave a la Deriva');
+});
+
 // Endpoint 1: /status
 app.get('/status', (req: Request, res: Response) => {
     // Simula un sistema dañado aleatorio
@@ -30,6 +35,7 @@ app.get('/repair-bay', (req: Request, res: Response) => {
       <html>
       <head>
           <title>Repair</title>
+          <link rel="icon" href="/favicon.ico" type="image/x-icon">
       </head>
       <body>
           <div class="anchor-point">${systemCode}</div>
