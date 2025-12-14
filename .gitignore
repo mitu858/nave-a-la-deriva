@@ -10,3 +10,4 @@ dist
 # Archivos de configuración de IDEs
 .vscode/
 *.code-workspace
+.vercel
